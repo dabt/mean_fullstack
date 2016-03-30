@@ -1,11 +1,21 @@
 <!doctype html>
-<html>
+
+<html ng-app="mean">
 <head>
+	<meta name="viewport" content="width=device-width">
 	<meta charset="UTF-8">
 	<title>Welcome</title>
 </head>
-<body>
+<body ng-controller="ContactsController">
 	<h1>Welcome to Contatooh!</h1>
 	<h2>Mean Full Stack Test app</h2>
+
+	<button ng-click="add()">New</button>
+	<p>Registered contacts: {{total}}</p>
+
+
+<script src="vendor/angular/angular.js"></script>
+<script src="js/main.js"></script>
+<script src="js/controllers/contactsController.js"></script>	
 </body>
 </html>

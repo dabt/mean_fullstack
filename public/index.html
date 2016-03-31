@@ -1,21 +1,18 @@
 <!doctype html>
-
 <html ng-app="mean">
-<head>
-	<meta name="viewport" content="width=device-width">
-	<meta charset="UTF-8">
-	<title>Welcome</title>
-</head>
-<body ng-controller="ContactsController">
-	<h1>Welcome to Contatooh!</h1>
-	<h2>Mean Full Stack Test app</h2>
+	<head>
+		<meta name="viewport" content="width=device-width">
+		<meta charset="UTF-8">
 
-	<button ng-click="add()">New</button>
-	<p>Registered contacts: {{total}}</p>
-
-
-<script src="vendor/angular/angular.js"></script>
-<script src="js/main.js"></script>
-<script src="js/controllers/contactsController.js"></script>	
-</body>
+		<title>Welcome</title>
+		<link rel="stylesheet" type="text/css" href="vendor/bootstrap/dist/css/bootstrap.min.css">
+	</head>
+	<body class="container">
+		<div ng-view> </div>
+		<script src="vendor/angular/angular.js"></script>
+		<script src="vendor/angular-route/angular-route.js"></script>
+		<script src="js/main.js"></script>
+		<script src="js/controllers/contactsController.js"></script>	
+		<script src="js/controllers/contactController.js"></script>
+	</body>
 </html>
